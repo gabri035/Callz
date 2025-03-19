@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Bs Support</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"/>
-    </head
+  </head>
 
     <body>
 
@@ -39,7 +39,7 @@
         
         </nav>
 
-    <!--  modali -->
+        <!--  modali -->
         <div class="container p-3 my-3 border rounded shadow-lg">
             <div class="row g-3">
                 <div class="col-lg-4 col-md-6 col-sm-12">
@@ -152,7 +152,6 @@
                 </div>
                 
             </div>
-
         </div>
         
         <!--  IMMAGINE -->
@@ -209,7 +208,7 @@
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img cass="d-block w-100" src="./image/finanza1.png" alt="prima slide" />
+                    <img class="d-block w-100" src="./image/finanza1.png" alt="prima slide" />
                 </div>
                 <div class="carousel-item">   
                     <img class="d-block w-100" src="./image/loro.jpg" alt="seconda slide" />
@@ -218,16 +217,43 @@
                     <img class="d-block w-100" src="./image/download.jpeg" alt="terza slide" />
                 </div>
             </div>
+
+            <!-- TASTO PRECEDENTE -->
             <a
-                class="carpusel-control-prev"
+                class="carousel-control-prev"
                 href="#mioCarousel"
                 role="button"
-                data-bs-slide="prev"
+                data-bs-slide="PREV"
             >
                 <span class="carousel-control.prev.icon" aria-hidden="true"> </span>
                 <span class="sr-only">Precedente</span>
+
+                
+            </a>
+
+            
+            <!-- TASTO SUCCESSIVO -->
+            <a
+                class="carousel-control-next"
+                href="#mioCarousel"
+                role="button"
+                data-bs-slide="NEXT"
+            >
+                <span class="carousel-control.next.icon" aria-hidden="true"> </span>
+                <span class="sr-only">Successivo</span>
+
+
             </a>
         </div> 
+        
+        <script>
+            $(document).ready(function() {
+                $("#mioCarousel").carousel();
+            })
+        </script>
+        
+
+
         
     </body>
 </html>
